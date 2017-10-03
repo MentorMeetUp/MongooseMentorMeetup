@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 class Navbar extends Component {
   // Setting the component's initial state
   state = {
-    skill: ""
+    skills: ""
   };
 
   handleInputChange = event => {
@@ -23,13 +23,13 @@ class Navbar extends Component {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     event.preventDefault();
 
-    if (!this.state.skill) {
+    if (!this.state.skills) {
       alert("Please enter a skill you'd like to search for");
     } else {
-      alert(`You searched for: ${this.state.skill}`);
+      alert(`You searched for: ${this.state.skills}`);
 
       this.setState({
-        skill: ""
+        skills: ""
         
       });
     }
@@ -52,14 +52,14 @@ class Navbar extends Component {
             <div className="form-group">
               <input
                 className="form-control"
-                value={this.state.skill}
-                name="skill"
+                value={this.state.skills}
+                name="skills"
                 onChange={this.handleInputChange}
                 type="text"
                 placeholder="Search for a Skill"
               />
             </div>
-              <Link to={`/results/${this.state.skill}`}>
+              <Link to={`/results/${this.state.skills}`}>
                 <button type="submit" className="btn btn-primary"><i className="fa fa-search" aria-hidden="true"></i></button>
               </Link>
           </form>

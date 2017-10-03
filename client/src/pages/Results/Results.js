@@ -28,9 +28,10 @@ class Results extends Component {
               {this.state.skills.length ? (
                 <div>
                 {this.state.skills.map(result => (
-                  <Col xs={5} md={3} lg={3}>
+                  <Col xs={6} md={4} lg={3}>
+
                   <Card
-                    key={result.id}
+                    key={result._id}
                     firstName={result.firstName}
                     lastName={result.lastName}
                     photo={result.photo}

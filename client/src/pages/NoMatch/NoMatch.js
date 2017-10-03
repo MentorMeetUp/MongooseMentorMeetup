@@ -1,9 +1,7 @@
 import React from "react";
 
 const NoMatch = () =>
-  // <Container fluid>
-  //   <Row>
-  //     <Col size="md-12">
+
         <div>
           <h1>404 Page Not Found</h1>
           <h1>
@@ -12,8 +10,6 @@ const NoMatch = () =>
             </span>
           </h1>
         </div>
-  //     </Col>
-  //   </Row>
-  // </Container>;
+
 
 export default NoMatch;

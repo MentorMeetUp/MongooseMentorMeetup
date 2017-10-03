@@ -51,7 +51,7 @@ const UserSeed = [
   state: "CA",
   zipcode: "92570",
   aboutMe: "I have lots of experience and I would be happy to share it with you",
-  skills: ["Web Development", "Photoshop", "Javascript"],
+  skills: ["Web Development", " Photoshop", " Javascript"],
   cost: "Free"
   },
   {  
@@ -103,7 +103,7 @@ const UserSeed = [
   state: "CA",
   zipcode: "92574",
   aboutMe: "I have lots of experience and I would be happy to share it with you",
-  skills: ["Stocks", "Trading", "Options"],
+  skills: ["Stocks", " Web Development", " Options"],
   cost: "Paid"
   },
   {  
@@ -116,7 +116,7 @@ const UserSeed = [
   state: "CA",
   zipcode: "92575",
   aboutMe: "I have lots of experience and I would be happy to share it with you",
-  skills: ["Stocks", "Trading", "Options"],
+  skills: ["Stocks", " Trading", " Options"],
   cost: "Free"
   },
   {  

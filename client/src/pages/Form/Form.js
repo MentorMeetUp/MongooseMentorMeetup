@@ -14,7 +14,8 @@ class Form extends Component {
     state: "",
     zipcode: "",
     aboutMe: "",
-    skills: ""
+    skills: "",
+    cost: ""
   };
 
   handleInputChange = event => {
@@ -45,14 +46,7 @@ class Form extends Component {
       )}
 
     else {
-    // } else {
-    //   alert(`Hello ${this.state.firstName} ${this.state.lastName} 
-    //     \nYour Location: ${this.state.city}, ${this.state.state}
-    //     \nYour Email: ${this.state.email}
-    //     \nYour password: ${this.state.password}
-    //     \nYour photo: ${this.state.photo}
-    //     \nYour About Me: ${this.state.aboutMe}
-    //     \nYour Skill: ${this.state.skill}`);
+
 
      API.saveUser({
 
@@ -65,11 +59,13 @@ class Form extends Component {
         state: this.state.state,
         zipcode: this.state.zipcode,
         aboutMe: this.state.aboutMe,
-        skills: this.state.skills
+        skills: this.state.skills,
+        cost: this.state.cost
         
       })
       .then(res => console.log(res))
         .catch(err => console.log(err));
+        window.location.href = "/login";
   }
 };
 
@@ -83,7 +79,7 @@ class Form extends Component {
 
           <div className="col-lg-6"> 
 
-              <form action="/api" method="POST" className="form">
+              <form className="form">
                 <label htmlFor="firstName">First Name:</label>
                 <input
                   className="form-control"

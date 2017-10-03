@@ -1,7 +1,4 @@
 import React from "react";
-// import {Grid} from "react-bootstrap";
-// import {Row} from "react-bootstrap";
-// import {Col} from "react-bootstrap";
 import {Thumbnail} from "react-bootstrap";
 import {Button} from "react-bootstrap";
 
@@ -14,13 +11,13 @@ const Card = props => (
           <strong>Name:</strong> {props.firstName} {props.lastName}
         </li>
         <li>
-          <strong>Skill:</strong> {props.skills} + " "
+          <strong>Skill:</strong> {props.skills}
         </li>
         <li>
           <strong>Location:</strong> {props.city}, {props.state}
         </li>
         <li>
-          <strong>Cost:</strong> {props.cost1}
+          <strong>Cost:</strong> {props.cost}
         </li><br></br>
         <li>
           <strong>About Me:</strong> {props.aboutMe}. 
