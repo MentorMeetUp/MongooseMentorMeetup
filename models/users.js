@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/mentorlist",
+  process.env.MONGODB_URI || "mongodb://MentorMeetup:noodles123@ds161584.mlab.com:61584/heroku_x6v4p28p",
   {
     useMongoClient: true
   }
