@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 import "./Login.css";
+import Footer from "../../components/Footer";
 
 class Login extends Component {
   
@@ -93,6 +94,7 @@ class Login extends Component {
           </div>
         </div>
         </div>
+        <Footer />
       </div>
     );
   }

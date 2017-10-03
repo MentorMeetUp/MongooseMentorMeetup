@@ -5,6 +5,7 @@ import {Grid} from "react-bootstrap";
 import {Row} from "react-bootstrap";
 import {Col} from "react-bootstrap";
 import "./cardStyle.css";
+import Footer from "../../components/Footer";
 
 class Results extends Component {
   state = {
@@ -23,6 +24,7 @@ class Results extends Component {
 
     render() {
       return (
+        <div>
         <Grid>
           <Row>
               {this.state.skills.length ? (
@@ -49,6 +51,8 @@ class Results extends Component {
             )}           
           </Row>
         </Grid>
+        <Footer />
+        </div>
     );
   }
 }

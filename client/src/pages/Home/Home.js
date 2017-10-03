@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Jumbotron } from "react-bootstrap";
+import Footer from "../../components/Footer";
 
 class Home extends Component {
   // Setting the component's initial state
@@ -70,6 +71,7 @@ class Home extends Component {
           </div>
         </div>
       </div>
+      <Footer />
     </div>  
     );
   }
