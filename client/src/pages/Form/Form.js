@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Form.css";
+import API from "../../utils/API";
 
 class Form extends Component {
   // Setting the component's initial state
@@ -13,7 +14,7 @@ class Form extends Component {
     state: "",
     zipcode: "",
     aboutMe: "",
-    skills: ""
+    skill1: ""
   };
 
   handleInputChange = event => {
@@ -35,30 +36,42 @@ class Form extends Component {
     event.preventDefault();
     if (!this.state.firstName || !this.state.lastName || !this.state.email || !this.state.city || !this.state.state || !this.state.zipcode) {
       alert("Fill out your first and last name please!");
-    } else if (this.state.password.length < 6) {
+    } 
+
+    else if (this.state.password.length < 6) {
       alert(
         `Choose a more secure password ${this.state.firstName} ${this.state
           .lastName}`
-      );
-    } else {
-      alert(`Hello ${this.state.firstName} ${this.state.lastName} 
-        \nYour Location: ${this.state.city}, ${this.state.state}
-        \nYour Email: ${this.state.email}
-        \nYour password: ${this.state.password}
-        \nYour photo: ${this.state.photo}
-        \nYour About Me: ${this.state.aboutMe}
-        \nYour Skill: ${this.state.skill}`);
+      )}
 
-      this.setState({
-        firstName: "",
-        lastName: ""
-      });
-    }
+    else {
+    // } else {
+    //   alert(`Hello ${this.state.firstName} ${this.state.lastName} 
+    //     \nYour Location: ${this.state.city}, ${this.state.state}
+    //     \nYour Email: ${this.state.email}
+    //     \nYour password: ${this.state.password}
+    //     \nYour photo: ${this.state.photo}
+    //     \nYour About Me: ${this.state.aboutMe}
+    //     \nYour Skill: ${this.state.skill}`);
 
-    this.setState({
-      password: ""
-    });
-  };
+     API.saveUser({
+
+        firstName: this.state.firstName,
+        lastName: this.state.lastName,
+        email: this.state.email,
+        password: this.state.password,
+        photo: this.state.photo,
+        city: this.state.city,
+        state: this.state.state,
+        zipcode: this.state.zipcode,
+        aboutMe: this.state.aboutMe,
+        skill1: this.state.skill1
+        
+      })
+      .then(res => console.log(res))
+        .catch(err => console.log(err));
+  }
+};
 
   render() {
     // Notice how each input has a `value`, `name`, and `onChange` prop
@@ -205,11 +218,11 @@ class Form extends Component {
                   type="text"
                   placeholder="About Me"
                 ></textarea>
-                <label htmlFor="skill">Skills willing to mentor:</label>
+                <label htmlFor="skill1">Skills willing to mentor:</label>
                 <input
                   className="form-control"
-                  value={this.state.skill}
-                  name="skill"
+                  value={this.state.skill1}
+                  name="skill1"
                   onChange={this.handleInputChange}
                   type="text"
                   placeholder="Skill"

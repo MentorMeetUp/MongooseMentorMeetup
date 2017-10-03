@@ -17,4 +17,10 @@ router
 	.route("/signIn/:email")
 	.get(usersController.findByEmail)
 
+//matches "api/users/posts"
+router
+  .route("/posts/")
+  .post(usersController.createForm)
+
+
 module.exports = router;
