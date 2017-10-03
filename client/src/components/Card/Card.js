@@ -17,7 +17,7 @@ const Card = props => (
           <strong>Name:</strong> {props.firstName} {props.lastName}
         </li>
         <li>
-          <strong>Skill:</strong> {props.skill}
+          <strong>Skill:</strong> {props.skills}
         </li>
         <li>
           <strong>Location:</strong> {props.city}, {props.state}

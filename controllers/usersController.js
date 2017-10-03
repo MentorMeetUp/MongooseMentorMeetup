@@ -18,7 +18,7 @@ module.exports = {
 
 	findAll: function(req, res) {
 		db.Users
-		.find({skill1:req.params.skill })
+		.find({skills:req.params.skill })
 	      .then(dbModel => res.json(dbModel))
 	      .catch(err => res.status(422).json(err));
 	}

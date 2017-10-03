@@ -14,7 +14,7 @@ class Form extends Component {
     state: "",
     zipcode: "",
     aboutMe: "",
-    skill1: ""
+    skills: ""
   };
 
   handleInputChange = event => {
@@ -65,7 +65,7 @@ class Form extends Component {
         state: this.state.state,
         zipcode: this.state.zipcode,
         aboutMe: this.state.aboutMe,
-        skill1: this.state.skill1
+        skills: this.state.skills
         
       })
       .then(res => console.log(res))
@@ -218,11 +218,11 @@ class Form extends Component {
                   type="text"
                   placeholder="About Me"
                 ></textarea>
-                <label htmlFor="skill1">Skills willing to mentor:</label>
+                <label htmlFor="skills">Skills willing to mentor:</label>
                 <input
                   className="form-control"
-                  value={this.state.skill1}
-                  name="skill1"
+                  value={this.state.skills}
+                  name="skills"
                   onChange={this.handleInputChange}
                   type="text"
                   placeholder="Skill"

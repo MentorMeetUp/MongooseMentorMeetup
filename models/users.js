@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/mentorlist" || "mongodb://MentorMeetup:noodles123@ds161584.mlab.com:61584/heroku_x6v4p28p",
+  process.env.MONGODB_URI || "mongodb://localhost/mentorlist",
   {
     useMongoClient: true
   }
@@ -57,30 +57,30 @@ const UsersSchema = new Schema({
         type: String, 
         required: false 
       },
-  skill1: { 
+  skills: { 
         type: String, 
         required: false 
       },
-  cost1: { 
+  cost: { 
         type: String, 
         required: false 
       },
-  skill2: { 
-        type: String, 
-        required: false 
-      },
-  cost2: { 
-        type: String, 
-        required: false 
-      },
-  skill3: { 
-        type: String, 
-        required: false 
-      },
-  cost3: { 
-        type: String, 
-        required: false 
-  }
+  // skill2: { 
+  //       type: String, 
+  //       required: false 
+  //     },
+  // cost2: { 
+  //       type: String, 
+  //       required: false 
+  //     },
+  // skill3: { 
+  //       type: String, 
+  //       required: false 
+  //     },
+  // cost3: { 
+  //       type: String, 
+  //       required: false 
+  
 });
 
 const Users = mongoose.model("Users", UsersSchema);

@@ -6,7 +6,7 @@ import Card from "../../components/Card";
 
 class Results extends Component {
   state = {
-    skill: []
+    skills: []
   };
 
   componentDidMount() {
@@ -15,16 +15,16 @@ class Results extends Component {
 
   loadResults = () => {
     API.getUserSkill(this.props.match.params.skill)
-    .then(res => this.setState({ skill: res.data }))
+    .then(res => this.setState({ skills: res.data }))
     .catch(err => console.log(err));
   };
 
   	render() {
 	    return (
 			<div className="container">
-              {this.state.skill.length ? (
+              {this.state.skills.length ? (
                 <div>
-                {this.state.skill.map(result => (
+                {this.state.skills.map(result => (
                   <Card
                     key={result.id}
                     firstName={result.firstName}
@@ -32,7 +32,7 @@ class Results extends Component {
                     photo={result.photo}
                     city={result.city}
                     state={result.state}
-                    skill={result.skill1} 
+                    skills={result.skills} 
                   />
                 ))}
                 </div>
