@@ -1,7 +1,11 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import { Jumbotron } from "react-bootstrap";
 import Footer from "../../components/Footer";
+
+const placeHolderInput= window.location.href.split("#");
+const queryInput = placeHolderInput[1]
+console.log(queryInput)
+
 
 class Home extends Component {
   // Setting the component's initial state
@@ -23,6 +27,14 @@ class Home extends Component {
   handleFormSubmit = event => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     event.preventDefault();
+
+
+   if(queryInput) 
+          {
+            window.location.href = "/results/" + this.state.skills + "/#" +  queryInput
+          }
+        else {window.location.href = "/results/nonuser/" + this.state.skills }
+
 
     if (!this.state.skills) {
       alert("Please enter a skill you'd like to search for");
@@ -64,7 +76,9 @@ class Home extends Component {
                     type="text"
                     placeholder="Search for a Skill"
                   />
-                    <Link to={`/results/${this.state.skills}`}><button className="btn btn-primary btn-md" /*onClick={this.handleFormSubmit}*/>Submit</button></Link>
+                   <button 
+                  className="btn btn-primary btn-md" 
+                  onClick={this.handleFormSubmit}>Submit</button>
               </form>
 
             </div>

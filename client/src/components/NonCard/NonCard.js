@@ -1,6 +1,5 @@
 import React from "react";
 import {Thumbnail} from "react-bootstrap";
-// import {Button} from "react-bootstrap";
 
 
 const NonCard = props => (
@@ -11,11 +10,11 @@ const NonCard = props => (
           <strong>Name:</strong> {props.firstName} {props.lastName}
         </li>
         <li>
-          <strong>Skill:</strong> {props.skills}
+          <strong>Skill:</strong> {props.skills.replace(/,/g, ", ")}
         </li>
-        {/* <li>
+        <li>
           <strong>Location:</strong> {props.city}, {props.state}
-        </li> */}
+        </li>
         <li>
           <strong>Cost:</strong> {props.cost}
         </li><br></br>
@@ -23,9 +22,6 @@ const NonCard = props => (
           <strong>About Me:</strong> {props.aboutMe}. 
         </li>
       </ul>
-      {/* <p>
-        <Button bsStyle="primary" bsSize="xsmall"><span className="glyphicon glyphicon-envelope">&nbsp;</span>{props.email}</Button>  
-      </p> */}
       </Thumbnail>
   </div>
 );

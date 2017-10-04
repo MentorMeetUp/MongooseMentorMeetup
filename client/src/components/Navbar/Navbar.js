@@ -1,6 +1,18 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-// import Modal from "./components/Modal";
+
+
+
+
+
+
+
+const placeHolderInput= window.location.href.split("#");
+const queryInput = placeHolderInput[1]
+console.log(queryInput)
+
+
+
 
 class Navbar extends Component {
   // Setting the component's initial state
@@ -23,10 +35,17 @@ class Navbar extends Component {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     event.preventDefault();
 
+ if(queryInput) 
+          {
+            window.location.href = "/results/" + this.state.skills + "/#" +  queryInput
+          }
+        else {window.location.href = "/results/nonuser/" + this.state.skills }
+
+
+
     if (!this.state.skills) {
       alert("Please enter a skill you'd like to search for");
     } else {
-      // alert(`You searched for: ${this.state.skills}`);
 
       this.setState({
         skills: ""
@@ -59,9 +78,11 @@ class Navbar extends Component {
                 placeholder="Search for a Skill"
               />
             </div>
-              <Link to={`/results/${this.state.skills}`}>
-                <button type="submit" className="btn btn-primary" /*onClick={this.handleFormSubmit}*/><i className="fa fa-search" aria-hidden="true"></i></button>
-              </Link>
+          
+               <button 
+                  className="btn btn-primary btn-md" 
+                  onClick={this.handleFormSubmit}><i className="fa fa-search" aria-hidden="true"></i></button>
+          
           </form>
 
             <ul className="nav navbar-nav navbar-right">
