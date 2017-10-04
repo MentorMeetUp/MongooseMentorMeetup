@@ -151,10 +151,10 @@ const UserSeed = [
   state: "CA",
   zipcode: "92575",
   aboutMe: "I have lots of experience and I would be happy to share it with you",
-  skills: ["Spanish", "French", "English"],
+  skills: ["Japanese", "Vietnamese", "Mandarin"],
   cost: "Paid"
   },
-    {  
+  {  
   firstName: "Diane",
   lastName: "Nicholas",
   email: "dnicholas@gmail.com",   
@@ -268,9 +268,139 @@ const UserSeed = [
   state: "CA",
   zipcode: "92575",
   aboutMe: "I have lots of experience and I would be happy to share it with you",
-  skills: ["Cooking", "BBQ", "Baking"],
+  skills: ["Volleyball", "Basketball", "Exercise"],
   cost: "Free"
   },
+  {  
+  firstName: "Eden",
+  lastName: "Douglas",
+  email: "edouglas@gmail.com",   
+  password: "qwerty",
+  photo: "https://i0.wp.com/socalpreplegends.com/wp-content/uploads//2015/12/OMARISMITH.png",    
+  city: "Mission Viejo",
+  state: "CA",
+  zipcode: "92573",
+  aboutMe: "I have lots of experience and I would be happy to share it with you",
+  skills: ["Volleyball", "Basketball", "Exercise"],
+  cost: "Paid"
+  },
+  {  
+  firstName: "Monica",
+  lastName: "Lee",
+  email: "mlee@gmail.com",   
+  password: "qwerty",
+  photo: "https://i1.wp.com/socalpreplegends.com/wp-content/uploads//2016/05/ciara-edgewood.jpg",    
+  city: "Lake Forest",
+  state: "CA",
+  zipcode: "",
+  aboutMe: "I have lots of experience and I would be happy to share it with you",
+  skills: ["Volleyball", "Basketball", "Exercise"],
+  cost: "Free"
+  },
+  {  
+  firstName: "Brad",
+  lastName: "Smith",
+  email: "bsmith@gmail.com",   
+  password: "qwerty",
+  photo: "http://wnixradio.com/wp-content/uploads/2016/09/larry_kudlow-01-250x200.jpg",    
+  city: "Tustin",
+  state: "CA",
+  zipcode: "92571",
+  aboutMe: "I have lots of experience and I would be happy to share it with you",
+  skills: ["Sales", "Networking", "Marketing"],
+  cost: "Paid"
+  },
+  {  
+  firstName: "Faith",
+  lastName: "Garcia",
+  email: "fgarcia@gmail.com",   
+  password: "qwerty",
+  photo: "http://hospitalitymgt.com/site/wp-content/uploads/2016/03/Ruthie-Web-380-x-304-2.jpg",    
+  city: "Santa Margarita",
+  state: "CA",
+  zipcode: "92570",
+  aboutMe: "I have lots of experience and I would be happy to share it with you",
+  skills: ["Sales", "Networking", "Marketing"],
+  cost: "Paid"
+  },
+  {  
+  firstName: "Mary",
+  lastName: "Duke",
+  email: "mduke@gmail.com",   
+  password: "qwerty",
+  photo: "http://echslawndale.org/wp-content/uploads/2017/06/DanniWashington2017_headshot-250x200.jpg",    
+  city: "Fountain Valley",
+  state: "CA",
+  zipcode: "92577",
+  aboutMe: "I have lots of experience and I would be happy to share it with you",
+  skills: ["Fashion", "Photography", "Film"],
+  cost: "Free"
+  },
+  {  
+  firstName: "Amanda",
+  lastName: "White",
+  email: "awhite@gmail.com",   
+  password: "qwerty",
+  photo: "http://rebeccawatson.org/wp-content/uploads/ewpt_cache/250x200_100_1_c_FFFFFF_9911063eb3e84b2231281c1da7cb850a_scan-3.jpg",    
+  city: "Costa Mesa",
+  state: "CA",
+  zipcode: "92576",
+  aboutMe: "I have lots of experience and I would be happy to share it with you",
+  skills: ["Sketching", "Drawing", "Painting"],
+  cost: "Paid"
+  },
+  {  
+  firstName: "Sam",
+  lastName: "Brady",
+  email: "sbrady@gmail.com",   
+  password: "qwerty",
+  photo: "https://s3-eu-west-1.amazonaws.com/tutors.firsttutors.com/80/79546/med.jpg",    
+  city: "Inglewood",
+  state: "CA",
+  zipcode: "92575",
+  aboutMe: "I have lots of experience and I would be happy to share it with you",
+  skills: ["Math", "Accounting", "Statistics"],
+  cost: "Paid"
+  },
+  {  
+  firstName: "Brittney",
+  lastName: "Reed",
+  email: "breed@gmail.com",   
+  password: "qwerty",
+  photo: "https://www.exede.com/wp-content/uploads/2016/08/iStock_85597567_SMALL-250x200.jpg",    
+  city: "Long Beach",
+  state: "CA",
+  zipcode: "92574",
+  aboutMe: "I have lots of experience and I would be happy to share it with you",
+  skills: ["Math", "Accounting", "Statistics"],
+  cost: "Free"
+  },
+  {  
+  firstName: "Dana",
+  lastName: "Mathews",
+  email: "dmathews@gmail.com",   
+  password: "qwerty",
+  photo: "https://ymcanwnc.org/wp-content/uploads/2016/08/2014-06-25_AOF_11979_RGB-250x200.jpg",    
+  city: "Watts",
+  state: "CA",
+  zipcode: "92573",
+  aboutMe: "I have lots of experience and I would be happy to share it with you",
+  skills: ["Weightlifting", "Crossfit", "Nutrition"],
+  cost: "Free"
+  },
+  {  
+  firstName: "Luke",
+  lastName: "Ross",
+  email: "lross@gmail.com",   
+  password: "qwerty",
+  photo: "https://ymcanwnc.org/wp-content/uploads/2016/06/High-Res-JPG-250x200.jpg",    
+  city: "Crenshaw",
+  state: "CA",
+  zipcode: "92572",
+  aboutMe: "I have lots of experience and I would be happy to share it with you",
+  skills: ["Weightlifting", "Crossfit", "Nutrition"],
+  cost: "Paid"
+  }
 ];
 
 db.Users

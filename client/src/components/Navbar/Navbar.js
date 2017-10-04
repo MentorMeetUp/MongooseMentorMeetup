@@ -64,12 +64,6 @@ class Navbar extends Component {
               </Link>
           </form>
 
-            {/* <form action="/results" method="post" name="search" className="navbar-form navbar-left" role="search">
-                <div className="form-group">
-                  <input type="text" className="form-control" id="search-navbar" placeholder="Search" name="Artist"/>
-                </div>
-                <button type="submit" className="btn btn-primary"><i className="fa fa-search" aria-hidden="true"></i></button>
-            </form>    */}
             <ul className="nav navbar-nav navbar-right">
               <li
                 className={
