@@ -11,7 +11,7 @@ const Card = props => (
           <strong>Name:</strong> {props.firstName} {props.lastName}
         </li>
         <li>
-          <strong>Skill:</strong> {props.skills}
+          <strong>Skill:</strong> {props.skills.replace(/,/g, ", ")}
         </li>
         <li>
           <strong>Location:</strong> {props.city}, {props.state}

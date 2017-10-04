@@ -16,6 +16,10 @@ class Results extends Component {
     this.loadResults();
   }
 
+  componentDidUpdate() {
+    this.loadResults();
+  }
+
   loadResults = () => {
     API.getUserSkill(this.props.match.params.skill)
     .then(res => this.setState({ skills: res.data }))
