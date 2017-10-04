@@ -22,7 +22,7 @@ const Card = props => (
         <li>
           <strong>About Me:</strong> {props.aboutMe}. 
         </li>
-      </ul>
+      </ul><br></br>
       <p>
         <Button bsStyle="primary" bsSize="xsmall"><span className="glyphicon glyphicon-envelope">&nbsp;</span>{props.email}</Button>  
       </p>
