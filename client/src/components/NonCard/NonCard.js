@@ -1,6 +1,6 @@
 import React from "react";
 import {Thumbnail} from "react-bootstrap";
-import {Button} from "react-bootstrap";
+// import {Button} from "react-bootstrap";
 
 
 const NonCard = props => (
