@@ -37,7 +37,7 @@ class Form extends Component {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     event.preventDefault();
     if (!this.state.firstName || !this.state.lastName || !this.state.email || !this.state.city || !this.state.state || !this.state.zipcode) {
-      alert("Fill out your first and last name please!");
+      alert("Fill out the missing fields please!");
     } 
 
     else if (this.state.password.length < 6) {
@@ -224,6 +224,19 @@ class Form extends Component {
                   type="text"
                   placeholder="Skill"
                 />
+                <label htmlFor="cost">Compensation:</label>
+                <select
+                  className="form-control"
+                  value={this.state.cost}
+                  name="cost"
+                  onChange={this.handleInputChange}
+                  type="cost"
+                  placeholder="Compensation"
+                >
+                  <option defaultValue="" /*selected disabled*/>Please select:</option>
+                  <option>Free</option>
+                  <option>Paid</option>
+                </select>  
                 <button 
                   className="btn btn-primary btn-md" 
                   onClick={this.handleFormSubmit}>Submit</button>

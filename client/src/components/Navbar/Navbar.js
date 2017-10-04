@@ -26,7 +26,7 @@ class Navbar extends Component {
     if (!this.state.skills) {
       alert("Please enter a skill you'd like to search for");
     } else {
-      alert(`You searched for: ${this.state.skills}`);
+      // alert(`You searched for: ${this.state.skills}`);
 
       this.setState({
         skills: ""
@@ -60,7 +60,7 @@ class Navbar extends Component {
               />
             </div>
               <Link to={`/results/${this.state.skills}`}>
-                <button type="submit" className="btn btn-primary"><i className="fa fa-search" aria-hidden="true"></i></button>
+                <button type="submit" className="btn btn-primary" /*onClick={this.handleFormSubmit}*/><i className="fa fa-search" aria-hidden="true"></i></button>
               </Link>
           </form>
 
