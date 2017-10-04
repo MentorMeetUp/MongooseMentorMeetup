@@ -28,7 +28,25 @@ class Login extends Component {
     
     event.preventDefault();
 
-    API.signIn(this.state.email)
+    if (!this.state.email || !this.state.password) {
+      alert("Please fill out all fields")
+      return;
+    } else if (this.state.password.length < 6) {
+      alert(
+        `Choose a more secure password`
+      )
+      return;
+    } 
+
+    else {
+
+      this.setState({
+        email: this.state.email,
+        password: this.state.password
+      });
+    }
+
+ API.signIn(this.state.email)
       .then(res => {
         console.log(res.data)
         if(this.state.email===res.data[0].email && this.state.password===res.data[0].password) 
@@ -41,20 +59,6 @@ class Login extends Component {
           }
         })
 
-    if (!this.state.email || !this.state.password) {
-      alert("Please fill out all fields");
-    } else if (this.state.password.length < 6) {
-      alert(
-        `Choose a more secure password`
-      );
-    } else {
-
-      this.setState({
-        email: this.state.email,
-        password: this.state.password
-      });
-    }
-
   };
 
   
@@ -65,8 +69,8 @@ class Login extends Component {
       <div className="container">
         <div className ="panel">
         <div className="row">
-          <div className="col-lg-3"></div>
-          <div className="col-lg-6">         
+          <div className="col-sm-3"></div>
+          <div className="col-sm-6">         
             <h1>
               Log-In!
             </h1>

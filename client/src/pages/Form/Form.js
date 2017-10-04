@@ -88,7 +88,7 @@ class Form extends Component {
                   name="firstName"
                   onChange={this.handleInputChange}
                   type="text"
-                  placeholder="First Name"
+                  placeholder="First Name(required)"
                 />
                 <label htmlFor="lastName">Last Name:</label>
                 <input
@@ -97,7 +97,7 @@ class Form extends Component {
                   name="lastName"
                   onChange={this.handleInputChange}
                   type="text"
-                  placeholder="Last Name"
+                  placeholder="Last Name(required)"
                 />
                 <label htmlFor="email">Email:</label>
                 <input
@@ -106,7 +106,7 @@ class Form extends Component {
                   name="email"
                   onChange={this.handleInputChange}
                   type="text"
-                  placeholder="Email"
+                  placeholder="Email(required)"
                 />
                 <label htmlFor="password">Password:</label>
                 <input
@@ -115,7 +115,7 @@ class Form extends Component {
                   name="password"
                   onChange={this.handleInputChange}
                   type="password"
-                  placeholder="Password"
+                  placeholder="Password(required)"
                 />
                 <label htmlFor="photo">Upload Photo:</label>
                 <input
@@ -133,7 +133,7 @@ class Form extends Component {
                   name="city"
                   onChange={this.handleInputChange}
                   type="text"
-                  placeholder="City"
+                  placeholder="City(required)"
                 />
                 <label htmlFor="state">State:</label>
                 <select
@@ -142,7 +142,7 @@ class Form extends Component {
                   name="state"
                   onChange={this.handleInputChange}
                   type="state"
-                  placeholder="State"
+                  placeholder="State(required)"
                 >
                   <option defaultValue="" /*selected disabled*/>Please select:</option>
                   <option>AL</option>
@@ -203,7 +203,7 @@ class Form extends Component {
                   name="zipcode"
                   onChange={this.handleInputChange}
                   type="string"
-                  placeholder="Zip Code"
+                  placeholder="Zip Code(required)"
                 />
                 <label htmlFor="aboutMe">About Me:</label>
                 <textarea
