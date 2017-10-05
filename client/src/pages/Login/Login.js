@@ -3,6 +3,7 @@ import API from "../../utils/API";
 import "./Login.css";
 import Footer from "../../components/Footer";
 import { Link } from "react-router-dom";
+import Slideshow from "../../components/Carousel";
 
 class Login extends Component {
   
@@ -101,6 +102,7 @@ class Login extends Component {
           </div>
         </div>
         </div>
+        <Slideshow />
         <Footer />
       </div>
     );
