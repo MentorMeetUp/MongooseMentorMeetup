@@ -20,21 +20,21 @@ const SlideShow = props => (
 		<Carousel.Item>
 			<img src={Miagi} width={900} height={500} alt="900x500 img" />
 			<Carousel.Caption>
-				<h3>Either free or prepaid, you can acquire new skills and meet liked-minded individuals.</h3>
+				<h2>Either free or prepaid, you can acquire new skills and meet liked-minded individuals.</h2>
 			</Carousel.Caption>
 		</Carousel.Item>
 
 		<Carousel.Item>
 			<img src={MjKobe} width={900} height={500} alt="900x500 img" />
 			<Carousel.Caption>
-				<h3>Everyone is good at something...</h3>
+				<h2>Everyone is good at something...</h2>
 			</Carousel.Caption>
 		</Carousel.Item>
 
 		<Carousel.Item>
 			<img src={Mickey} width={900} height={500} alt="900x500 img" />
 			<Carousel.Caption>
-				<h3>Share it</h3>
+				<h2>Share it</h2>
 			</Carousel.Caption>
 		</Carousel.Item>
 	</Carousel>
