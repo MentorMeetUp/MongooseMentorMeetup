@@ -16,7 +16,9 @@
 .footerForm {
   
     position: absolute;
-    bottom: -500px;
+    height: 40px;
+    padding: 10px;
+    bottom: -300px;
     left: 0px;
     width: 100%;
     background: #4e5d6c;

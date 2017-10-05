@@ -4,6 +4,7 @@ import Footer from "../../components/Footer";
 import SlideShow from "../../components/Carousel";
 import Video from "../../components/Video";
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 const placeHolderInput= window.location.href.split("#");
 const queryInput = placeHolderInput[1]
@@ -74,23 +75,29 @@ class Home extends Component {
         <h3 className="text-center">
           Find 1-on-1 Instructors, Tutors & Mentors
         </h3>
-       {/*} <form className="navbar-form navbar-left">
-            <div className="form-group">
-              <input
-                className="form-control"
-                value={this.state.skills}
-                name="skills"
-                onChange={this.handleInputChange}
-                type="text"
-                placeholder="Search for a Skill"
-              />
-            </div>
-          
-               <button 
-                  className="btn btn-primary btn-md" 
-                  onClick={this.handleFormSubmit}>Submit</button>
-          
-          </form>*/}
+        <div className="row">
+          <div className="col-sm-3"></div>
+            <div className="col-sm-6">
+            <form className="form">
+                <div className="form-group">
+                  <input
+                    className="form-control"
+                    value={this.state.skills}
+                    name="skills"
+                    onChange={this.handleInputChange}
+                    type="text"
+                    placeholder="Search for a Skill"
+                  />
+                  
+                </div>
+                <p><Link to="/form"><strong>Sign Up!</strong></Link> | <Link to="/login"><strong>Log-In</strong></Link>                   <button 
+                      className="btn btn-primary btn-md" 
+                      onClick={this.handleFormSubmit}>Submit</button></p>
+
+              
+              </form>
+          </div>
+        </div>
 </div>
               
             </div>
