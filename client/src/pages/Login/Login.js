@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import API from "../../utils/API";
 import "./Login.css";
 import Footer from "../../components/Footer";
+import { Link } from "react-router-dom";
 
 class Login extends Component {
   
@@ -71,9 +72,10 @@ class Login extends Component {
         <div className="row">
           <div className="col-sm-3"></div>
           <div className="col-sm-6">         
-            <h1>
-              Log-In!
-            </h1>
+            <legend>
+              <h1>Log-In!</h1>
+
+            </legend>
             <form className="form">
               <label htmlFor="email">E-mail:</label>
               <input
@@ -93,7 +95,8 @@ class Login extends Component {
                 type="password"
                 placeholder="Password"
               />
-              <button className="btn btn-primary btn-md" onClick={this.handleFormSubmit}>Submit</button>
+              <p>Not registered yet? <Link to="/form"><strong>Sign Up!</strong></Link></p>
+              <button className="btn btn-primary btn-md btn-move" onClick={this.handleFormSubmit}>Submit</button>
             </form>
           </div>
         </div>

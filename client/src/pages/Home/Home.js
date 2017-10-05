@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Jumbotron } from "react-bootstrap";
 import Footer from "../../components/Footer";
+import "./Home.css";
 
 const placeHolderInput= window.location.href.split("#");
 const queryInput = placeHolderInput[1]
@@ -64,8 +65,8 @@ class Home extends Component {
       <div className="container">
         <div className="panel">
           <div className="row">
-            <div className="col-lg-3"></div>
-            <div className="col-lg-6"> 
+            <div className="col-sm-3"></div>
+            <div className="col-sm-6"> 
               <form className="form">
               <label htmlFor="skills">Search for a Skill You'd Like to Learn</label>
                   <input
@@ -77,7 +78,7 @@ class Home extends Component {
                     placeholder="Search for a Skill"
                   />
                    <button 
-                  className="btn btn-primary btn-md" 
+                  className="btn btn-primary btn-md btn-move" 
                   onClick={this.handleFormSubmit}>Submit</button>
               </form>
 

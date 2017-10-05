@@ -76,9 +76,9 @@ class Form extends Component {
       <div className="container">
         <div className ="panel">
         <div className="row">
-          <div className="col-lg-3"></div>
+          <div className="col-sm-3"></div>
 
-          <div className="col-lg-6"> 
+          <div className="col-sm-6"> 
 
               <form className="form">
                 <label htmlFor="firstName">First Name:</label>
@@ -238,11 +238,10 @@ class Form extends Component {
                   <option>Paid</option>
                 </select>  
                 <button 
-                  className="btn btn-primary btn-md" 
+                  className="btn btn-primary btn-md btn-move" 
                   onClick={this.handleFormSubmit}>Submit</button>
               </form>
 
-          <div className="col-lg-3"></div>
           </div>
         </div>
         </div>
