@@ -17,11 +17,12 @@ app.use(routes);
 mongoose.Promise = global.Promise;
 // Connect to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/mentorlist" || "mongodb://admin:admin@ds159662.mlab.com:11895/4vhhh8rq",
+  process.env.MONGODB_URI || "mongodb://localhost/mentorlist" || "mongodb://admin:admin@ds161194.mlab.com:61194/heroku_p9xxsj90",
     {
     	useMongoClient: true
   }
 );
+
 
 // Start the API server
 app.listen(PORT, function() {
