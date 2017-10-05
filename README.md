@@ -12,3 +12,12 @@
 * Express
 * Axios
 
+## Walk Through
+
+Use the Search Bar to look through our community database for skills you are interested in learning more about. 
+
+
+Sign up to access the Mentor's contact information so you can connect and arrange a meet up.
+
+
+You can aslo list a skill if you'd like to be a Mentor. Coming soon you will be able to offer multiple skills. 
