@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Form.css";
 import API from "../../utils/API";
-import Footer from "../../components/Footer";
+import FooterForm from "./FooterForm";
 
 class Form extends Component {
   // Setting the component's initial state
@@ -245,7 +245,7 @@ class Form extends Component {
           </div>
         </div>
         </div>
-        <Footer />
+        <FooterForm />
       </div>
     );
   }

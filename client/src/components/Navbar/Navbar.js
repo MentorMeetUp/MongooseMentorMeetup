@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 
 
@@ -58,11 +59,11 @@ class Navbar extends Component {
 
   render() {
     return (
-      <nav className="navbar navbar-default">
+      <nav className="navbar navbar-default navbar-fixed">
         <div className="container-fluid">
           <div className="navbar-header">
             <Link className="navbar-brand" to="/">
-              <strong>Mentor Me</strong>
+              <strong>Mentor MeetUp</strong>
             </Link>
           </div>
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
