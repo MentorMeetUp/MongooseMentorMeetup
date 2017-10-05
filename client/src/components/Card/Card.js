@@ -1,14 +1,15 @@
 import React from "react";
 import {Thumbnail} from "react-bootstrap";
 import {Button} from "react-bootstrap";
+import "./Card.css";
 
 
 const Card = props => (
   <div>
-      <Thumbnail src={props.photo} alt="User Photo">
+      <Thumbnail src={props.photo} alt="User Photo" className="card-border">
       <ul>
-        <li>
-          <strong>Name:</strong> {props.firstName} {props.lastName}
+        <li className="text-center">
+          <strong> {props.firstName} {props.lastName}</strong>
         </li>
         <li>
           <strong>Skill:</strong> {props.skills.replace(/,/g, ", ")}
@@ -20,9 +21,9 @@ const Card = props => (
           <strong>Cost:</strong> {props.cost}
         </li><br></br>
         <li>
-          <strong>About Me:</strong> {props.aboutMe}. 
+          <strong>About Me:</strong> <em>{props.aboutMe}.</em> 
         </li>
-      </ul><br></br>
+      </ul>
       <p>
         <Button bsStyle="primary" bsSize="xsmall"><span className="glyphicon glyphicon-envelope">&nbsp;</span>{props.email}</Button>  
       </p>

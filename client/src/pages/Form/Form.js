@@ -78,7 +78,11 @@ class Form extends Component {
         <div className="row">
           <div className="col-sm-3"></div>
 
-          <div className="col-sm-6"> 
+          <div className="col-sm-6">
+          <legend>
+              <h1>Sign-Up Form</h1>
+
+            </legend> 
 
               <form className="form">
                 <label htmlFor="firstName">First Name:</label>

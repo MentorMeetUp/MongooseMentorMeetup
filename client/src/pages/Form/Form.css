@@ -21,5 +21,18 @@
     width: 100%;
     background: #4e5d6c;
     text-align: center;
+    border: 1px solid black;
   
+  }
+
+  legend {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 21px;
+    font-size: 22.5px;
+    line-height: inherit;
+    color: #ebebeb;
+    border: 0;
+    border-bottom: 1px solid #818E9A;
   }

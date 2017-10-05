@@ -1,0 +1,10 @@
+li {
+    margin-bottom: 5px;
+};
+
+li .text-center {
+    margin-bottom: 100px;
+};
+.card-border {
+    border: 1px solid black;
+}
