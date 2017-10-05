@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Jumbotron } from "react-bootstrap";
 import Footer from "../../components/Footer";
 import SlideShow from "../../components/Carousel";
+import Video from "../../components/Video";
 import "./Home.css";
 
 const placeHolderInput= window.location.href.split("#");
@@ -51,42 +52,52 @@ class Home extends Component {
   };
 
   render() {
-    // Notice how each input has a `value`, `name`, and `onChange` prop
+      // Notice how each input has a `value`, `name`, and `onChange` prop
     return (
     <div>
-      <Jumbotron>
-        <h1 className="text-center">
-          Mentor MeetUp
-        </h1>
-        <h3 className="text-center">
-          Find 1-on-1 Instructors, Tutors & Mentors
-        </h3>
-      </Jumbotron>
+<div>
+    <Video/>
+        </div>
+      
 
-      <div className="container">
+
+      <div className="container ">
         <div className="panel">
           <div className="row">
             <div className="col-sm-3"></div>
             <div className="col-sm-6"> 
-              <form className="form">
-              <label htmlFor="skills">Search for a Skill You'd Like to Learn</label>
-                  <input
-                    className="form-control"
-                    value={this.state.skills}
-                    name="skills"
-                    onChange={this.handleInputChange}
-                    type="text"
-                    placeholder="Search for a Skill"
-                  />
-                   <button 
-                  className="btn btn-primary btn-md btn-move" 
+            <div className="movement"> 
+
+<h1 className="text-center ">
+         Mentor MeetUp
+        </h1>
+        <h3 className="text-center">
+          Find 1-on-1 Instructors, Tutors & Mentors
+        </h3>
+       {/*} <form className="navbar-form navbar-left">
+            <div className="form-group">
+              <input
+                className="form-control"
+                value={this.state.skills}
+                name="skills"
+                onChange={this.handleInputChange}
+                type="text"
+                placeholder="Search for a Skill"
+              />
+            </div>
+          
+               <button 
+                  className="btn btn-primary btn-md" 
                   onClick={this.handleFormSubmit}>Submit</button>
-              </form>
+          
+          </form>*/}
+</div>
+              
             </div>
           </div>
         </div>
       </div>
-      <SlideShow />
+      {/* <SlideShow />*/}
       <Footer />
     </div>  
     );

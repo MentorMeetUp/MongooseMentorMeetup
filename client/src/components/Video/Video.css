@@ -1,0 +1,19 @@
+#banner{
+position:fixed;
+  margin:0;
+  width:2000px;
+  height:500px!important;
+  border: 1px solid red;
+
+}
+
+#background-video {
+  position: absolute;
+  width: 2000px !important;
+  height: auto !important;
+  background-size: cover;
+  transition: 1s opacity;
+  z-index:-1;
+  max-width: 72%!important;
+}
+
