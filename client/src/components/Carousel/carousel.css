@@ -1,0 +1,11 @@
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+h3 {
+    text-shadow: 
+    	-1px -1px 0 black,
+		1px -1px 0 black,
+		-1px 1px 0 black,
+		1px 1px 0 black;
+}

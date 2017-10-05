@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Jumbotron } from "react-bootstrap";
 import Footer from "../../components/Footer";
+import SlideShow from "../../components/Carousel";
 import "./Home.css";
 
 const placeHolderInput= window.location.href.split("#");
@@ -81,11 +82,11 @@ class Home extends Component {
                   className="btn btn-primary btn-md btn-move" 
                   onClick={this.handleFormSubmit}>Submit</button>
               </form>
-
             </div>
           </div>
         </div>
       </div>
+      <SlideShow />
       <Footer />
     </div>  
     );
