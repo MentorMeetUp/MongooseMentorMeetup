@@ -62,10 +62,10 @@ class Home extends Component {
 
 
       <div className="container ">
-        <div className="panel">
-          <div className="row">
-            <div className="col-sm-3"></div>
-            <div className="col-sm-6"> 
+        <div >
+          <div >
+            <div ></div>
+            <div > 
             <div className="movement"> 
 
 <h1 className="text-center ">
