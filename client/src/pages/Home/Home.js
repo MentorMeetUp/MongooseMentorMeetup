@@ -65,9 +65,9 @@ class Home extends Component {
           <div >
             <div ></div>
             <div > 
-            <div className="movement"> 
+      <div className="movement"> 
 
-<h1 className="text-center ">
+        <h1 className="text-center ">
          Mentor MeetUp
         </h1>
         <h3 className="text-center">
@@ -76,34 +76,32 @@ class Home extends Component {
         <div className="row">
           <div className="col-sm-3"></div>
             <div className="col-sm-6">
-            <form className="form">
-                <div className="form-group">
-                  <input
-                    className="form-control"
-                    value={this.state.skills}
-                    name="skills"
-                    onChange={this.handleInputChange}
-                    type="text"
-                    placeholder="Search for a Skill"
-                  />
-                  
-                </div>
-                <p><Link to="/form"><strong>Sign Up!</strong></Link> | <Link to="/login"><strong>Log-In</strong></Link>                   <button 
-                      className="btn btn-primary btn-md" 
-                      onClick={this.handleFormSubmit}>Submit</button></p>
+              <form className="form">
+                  <div className="form-group">
+                    <input
+                      className="form-control"
+                      value={this.state.skills}
+                      name="skills"
+                      onChange={this.handleInputChange}
+                      type="text"
+                      placeholder="Search for a Skill"
+                    />
+                    
+                  </div>
+                  <p><Link to="/form"><strong>Sign Up!</strong></Link> | <Link to="/login"><strong>Log-In</strong></Link>                   <button 
+                        className="btn btn-primary btn-md" 
+                        onClick={this.handleFormSubmit}>Submit</button></p>
 
-              
+                
               </form>
-          </div>
+            </div>
         </div>
-</div>
+    </div>
               
             </div>
           </div>
         </div>
       </div>
-      {/* <SlideShow />*/}
-      <Footer />
     </div>  
     );
   }

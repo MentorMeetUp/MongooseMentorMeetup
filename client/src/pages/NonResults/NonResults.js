@@ -5,7 +5,6 @@ import {Grid} from "react-bootstrap";
 import {Row} from "react-bootstrap";
 import {Col} from "react-bootstrap";
 import "./cardStyle.css";
-import Footer from "../../components/Footer";
 import { Link } from "react-router-dom";
 
 class NonResults extends Component {
@@ -61,7 +60,6 @@ class NonResults extends Component {
             )}           
           </Row>
         </Grid>
-        <Footer />
         </div>
     );
   }

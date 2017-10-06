@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Form.css";
 import API from "../../utils/API";
-import FooterForm from "./FooterForm";
+
 
 class Form extends Component {
   // Setting the component's initial state
@@ -80,7 +80,7 @@ class Form extends Component {
 
           <div className="col-sm-6">
           <legend>
-              <h1>Sign-Up Form</h1>
+              <h2>Sign-Up Form</h2>
 
             </legend> 
 
@@ -249,7 +249,6 @@ class Form extends Component {
           </div>
         </div>
         </div>
-        <FooterForm />
       </div>
     );
   }

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 import "./Login.css";
-import Footer from "../../components/Footer";
 import { Link } from "react-router-dom";
 import Slideshow from "../../components/Carousel";
 
@@ -74,7 +73,7 @@ class Login extends Component {
           <div className="col-sm-3"></div>
           <div className="col-sm-6">         
             <legend>
-              <h1>Log-In!</h1>
+              <h2>Log-In!</h2>
 
             </legend>
             <form className="form">
@@ -103,7 +102,6 @@ class Login extends Component {
         </div>
         </div>
         <Slideshow />
-        <Footer />
       </div>
     );
   }
