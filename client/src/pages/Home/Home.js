@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import { Jumbotron } from "react-bootstrap";
 import Footer from "../../components/Footer";
-import SlideShow from "../../components/Carousel";
 import Video from "../../components/Video";
 import "./Home.css";
 import { Link } from "react-router-dom";
