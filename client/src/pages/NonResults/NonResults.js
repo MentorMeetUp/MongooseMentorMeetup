@@ -29,6 +29,11 @@ class NonResults extends Component {
     render() {
       return (
         <div>
+          <div className="container">
+          <div className="panel text-center">
+            <h3>To see more info about Mentors, please log-in!</h3>
+          </div>
+        </div>
         <Grid>
           <Row>
               {this.state.skills.length ? (
