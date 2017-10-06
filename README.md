@@ -24,5 +24,8 @@
 
 3) Sign up and login to access the Mentor's contact information so you can connect and arrange a meet up.
 
+![capture3](https://user-images.githubusercontent.com/29411395/31280445-38399220-aa61-11e7-9c9d-3bf1d24b7e6d.JPG)
 
 4) You can also list a skill if you'd like to be a Mentor. Coming soon you will be able to offer multiple skills and search by location. 
+
+![capture4](https://user-images.githubusercontent.com/29411395/31280444-38398a50-aa61-11e7-8adb-f0f50da37610.JPG)
