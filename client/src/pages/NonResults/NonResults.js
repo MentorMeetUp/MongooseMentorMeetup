@@ -6,6 +6,7 @@ import {Row} from "react-bootstrap";
 import {Col} from "react-bootstrap";
 import "./cardStyle.css";
 import Footer from "../../components/Footer";
+import { Link } from "react-router-dom";
 
 class NonResults extends Component {
   state = {
@@ -31,7 +32,7 @@ class NonResults extends Component {
         <div>
           <div className="container">
           <div className="panel text-center">
-            <h3>To see more info about Mentors, please log-in!</h3>
+            <h3>To see more info about Mentors, please login <Link to="/login">here.</Link></h3>
           </div>
         </div>
         <Grid>

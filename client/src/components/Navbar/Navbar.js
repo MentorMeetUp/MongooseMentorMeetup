@@ -101,7 +101,7 @@ class Navbar extends Component {
                 <Link to="/form">Sign Up</Link>
               </li>
               <li className={window.location.pathname === "/login" ? "active" : ""}>
-                <Link to="/login">Log In</Link>
+                <Link to="/login">Login</Link>
               </li>
             </ul>
           </div>
