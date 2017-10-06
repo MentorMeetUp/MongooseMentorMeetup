@@ -16,6 +16,8 @@
 
 Use the Search Bar to look through our community database for skills you are interested in learning more about. 
 
+![capture1](https://user-images.githubusercontent.com/29411395/31279561-4f9d43f6-aa5e-11e7-9f44-da64eb8e0f68.JPG)
+
 
 Sign up to access the Mentor's contact information so you can connect and arrange a meet up.
 
