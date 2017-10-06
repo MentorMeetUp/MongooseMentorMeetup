@@ -48,6 +48,32 @@ const UserSeed = [
   zipcode: "92572",
   aboutMe: "I have lots of experience and I would be happy to share it with you",
   skills: ["Web Development", "Photoshop", "Javascript"],
+  cost: "Free"
+  },
+  {  
+  firstName: "Jack",
+  lastName: "Hart",
+  email: "jhart@gmail.com",   
+  password: "qwerty",
+  photo: "http://www.iath.virginia.edu/images/staff/2015-Doug_Ross.jpg",    
+  city: "Irvine",
+  state: "CA",
+  zipcode: "92572",
+  aboutMe: "I have lots of experience and I would be happy to share it with you",
+  skills: ["Web Development", "Photoshop", "Javascript"],
+  cost: "Paid"
+  },
+  {  
+  firstName: "Sue",
+  lastName: "Ford",
+  email: "bford@gmail.com",   
+  password: "qwerty",
+  photo: "http://www.digitalpopupbook.com/images/author_acb.jpg?1346431341",    
+  city: "Crenshaw",
+  state: "CA",
+  zipcode: "92572",
+  aboutMe: "I have lots of experience and I would be happy to share it with you",
+  skills: ["Web Development", "Photoshop", "Javascript"],
   cost: "Paid"
   },
   { 
@@ -90,6 +116,45 @@ const UserSeed = [
   cost: "Free"
   },
   {  
+  firstName: "Josh",
+  lastName: "Sheets",
+  email: "jsheets@gmail.com",   
+  password: "qwerty",
+  photo: "http://www.fromhomemakemoney.com/wp-content/uploads/2013/11/46ee60bc-4968-441e-92e5-323a625f8412-250x200.jpg",    
+  city: "L.A.",
+  state: "CA",
+  zipcode: "92572",
+  aboutMe: "I have lots of experience and I would be happy to share it with you",
+  skills: ["Stocks", "Trading", "Options"],
+  cost: "Free"
+  },
+  {  
+  firstName: "Abe",
+  lastName: "Reid",
+  email: "areid@gmail.com",   
+  password: "qwerty",
+  photo: "https://msgraphics.azureedge.net/cache/0/4/d/5/7/d/04d57d41f2e609a6d12dafc23a61aae24b8a4e7d.jpg",    
+  city: "Irvine",
+  state: "CA",
+  zipcode: "92572",
+  aboutMe: "I have lots of experience and I would be happy to share it with you",
+  skills: ["Stocks", "Trading", "Options"],
+  cost: "Paid"
+  },
+  {  
+  firstName: "Scott",
+  lastName: "Smith",
+  email: "ssmith@gmail.com",   
+  password: "qwerty",
+  photo: "http://www.edwardburnsguitar.com/images/250_burnse282_t.jpg",    
+  city: "Dana Point",
+  state: "CA",
+  zipcode: "92572",
+  aboutMe: "I have lots of experience and I would be happy to share it with you",
+  skills: ["Guitar", "Drums", "Keyboard"],
+  cost: "Paid"
+  },
+  {  
   firstName: "Yanna",
   lastName: "Gonzales",
   email: "ygonzales@gmail.com",   
@@ -111,6 +176,19 @@ const UserSeed = [
   city: "Stanton",
   state: "CA",
   zipcode: "92577",
+  aboutMe: "I have lots of experience and I would be happy to share it with you",
+  skills: ["Guitar", "Drums", "Keyboard"],
+  cost: "Paid"
+  },
+  {  
+  firstName: "Ed",
+  lastName: "Stach",
+  email: "estash@gmail.com",   
+  password: "qwerty",
+  photo: "https://i.pinimg.com/originals/7f/1d/0e/7f1d0e236339a86ead1b748e85031f12.jpg",    
+  city: "Irvine",
+  state: "CA",
+  zipcode: "92572",
   aboutMe: "I have lots of experience and I would be happy to share it with you",
   skills: ["Guitar", "Drums", "Keyboard"],
   cost: "Paid"
@@ -142,6 +220,32 @@ const UserSeed = [
   cost: "Free"
   },
   {  
+  firstName: "Danny",
+  lastName: "Wu",
+  email: "dwu@gmail.com",   
+  password: "qwerty",
+  photo: "http://www.surf-forecast.com/system/images/6586/small_illustration/Huntington-Beach.jpg",    
+  city: "Orange",
+  state: "CA",
+  zipcode: "92572",
+  aboutMe: "I have lots of experience and I would be happy to share it with you",
+  skills: ["Surfing", "Sailing", "Wind Surfing"],
+  cost: "Free"
+  },
+  {  
+  firstName: "Jamie",
+  lastName: "Devlin",
+  email: "jdevlin@gmail.com",   
+  password: "qwerty",
+  photo: "http://fanaticaltourism.com/wp-content/uploads/2015/04/surf-travel-1-250x200.jpeg",    
+  city: "Orange",
+  state: "CA",
+  zipcode: "92572",
+  aboutMe: "I have lots of experience and I would be happy to share it with you",
+  skills: ["Surfing", "Sailing", "Wind Surfing"],
+  cost: "Paid"
+  },
+  {  
   firstName: "Victor",
   lastName: "Brown",
   email: "vbrown@gmail.com",   
@@ -167,7 +271,7 @@ const UserSeed = [
   skills: ["Spanish", "French", "English"],
   cost: "Free"
   },
-    {  
+  {  
   firstName: "Fiona",
   lastName: "Douglas",
   email: "fdouglas@gmail.com",   
@@ -180,7 +284,33 @@ const UserSeed = [
   skills: ["Soccer", "Exercise", "Juggling"],
   cost: "Paid"
   },
-    {  
+  {  
+  firstName: "Hope",
+  lastName: "Young",
+  email: "hyoung@gmail.com",   
+  password: "qwerty",
+  photo: "http://www.parentspost.com/default/KIKA4.jpg",    
+  city: "Costa Mesa",
+  state: "CA",
+  zipcode: "92572",
+  aboutMe: "I have lots of experience and I would be happy to share it with you",
+  skills: ["Soccer", "Exercise", "Juggling"],
+  cost: "Free"
+  },
+  {  
+  firstName: "Juan",
+  lastName: "Diaz",
+  email: "jdiaz@gmail.com",   
+  password: "qwerty",
+  photo: "http://thephysicsinsoccer.weebly.com/uploads/8/2/5/5/8255171/3775710.jpeg",    
+  city: "Fullerton",
+  state: "CA",
+  zipcode: "92572",
+  aboutMe: "I have lots of experience and I would be happy to share it with you",
+  skills: ["Soccer", "Exercise", "Juggling"],
+  cost: "Free"
+  },
+  {  
   firstName: "Natalie",
   lastName: "Lee",
   email: "nlee@gmail.com",   
@@ -325,6 +455,19 @@ const UserSeed = [
   },
   {  
   firstName: "Mary",
+  lastName: "Bush",
+  email: "mbush@gmail.com",   
+  password: "qwerty",
+  photo: "https://www.housingwire.com/ext/resources/images/editorial/Caroline-Basile/Gemma-Currier.jpg",    
+  city: "Orange",
+  state: "CA",
+  zipcode: "92572",
+  aboutMe: "I have lots of experience and I would be happy to share it with you",
+  skills: ["Sales", "Networking", "Marketing"],
+  cost: "Paid"
+  },
+  {  
+  firstName: "Mary",
   lastName: "Duke",
   email: "mduke@gmail.com",   
   password: "qwerty",
@@ -358,6 +501,71 @@ const UserSeed = [
   city: "Inglewood",
   state: "CA",
   zipcode: "92575",
+  aboutMe: "I have lots of experience and I would be happy to share it with you",
+  skills: ["Math", "Accounting", "Statistics"],
+  cost: "Paid"
+  },
+  {  
+  firstName: "Sasha",
+  lastName: "Rose",
+  email: "srose@gmail.com",   
+  password: "qwerty",
+  photo: "http://imaginemidatlantic.com/wp-content/gallery/2017-teachers-of-the-year/Adrienne-Holmes-Cleckley-3rd-Grade-Teacher.jpg",    
+  city: "Orange",
+  state: "CA",
+  zipcode: "92572",
+  aboutMe: "I have lots of experience and I would be happy to share it with you",
+  skills: ["Math", "Accounting", "Statistics"],
+  cost: "Free"
+  },
+  {  
+  firstName: "Jeff",
+  lastName: "Sims",
+  email: "jsimms@gmail.com",   
+  password: "qwerty",
+  photo: "https://g.rrrather.com/img/q/12809a.jpg",    
+  city: "Stanton",
+  state: "CA",
+  zipcode: "92572",
+  aboutMe: "I have lots of experience and I would be happy to share it with you",
+  skills: ["Math", "Accounting", "Statistics"],
+  cost: "Paid"
+  },
+  {  
+  firstName: "Xang",
+  lastName: "Lee",
+  email: "xlee@gmail.com",   
+  password: "qwerty",
+  photo: "http://www.gsea.org.pk/images/pic4.jpg",    
+  city: "Santa Ana",
+  state: "CA",
+  zipcode: "92572",
+  aboutMe: "I have lots of experience and I would be happy to share it with you",
+  skills: ["Math", "Accounting", "Statistics"],
+  cost: "Free"
+  },
+  {  
+  firstName: "Stan",
+  lastName: "Pitt",
+  email: "spitt@gmail.com",   
+  password: "qwerty",
+  photo: "http://math.columbia.edu/~picard/profile.jpg",    
+  city: "Hollywood",
+  state: "CA",
+  zipcode: "92572",
+  aboutMe: "I have lots of experience and I would be happy to share it with you",
+  skills: ["Math", "Accounting", "Statistics"],
+  cost: "Free"
+  },
+  {  
+  firstName: "Pei",
+  lastName: "Chen",
+  email: "pchen@gmail.com",   
+  password: "qwerty",
+  photo: "http://www.southwestern.edu/live/image/gid/30/width/250/8272_fumiko-web.jpg",    
+  city: "Newport Beach",
+  state: "CA",
+  zipcode: "92572",
   aboutMe: "I have lots of experience and I would be happy to share it with you",
   skills: ["Math", "Accounting", "Statistics"],
   cost: "Paid"
